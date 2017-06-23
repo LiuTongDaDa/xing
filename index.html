@@ -1,0 +1,256 @@
+<！DOCTYPE html PUBLIC “ -  // W3C // DTD XHTML 1.0 Transitional // EN”  “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd” >
+< html  xmlns = “ http://www.w3.org/1999/xhtml ” >
+< head >
+< 链路 HREF = “ {} CSS_PATH /hbschool/erweima.css ” 相对 = “样式表” 类型 = “文本/ CSS ” />
+< meta  http-equiv = “ Content-Type ”  content = “ text / html; charset = utf-8 ” />
+< 标题 >河北中学</ 标题 >
+< 链路 HREF = “ {} CSS_PATH /hbschool/style.css ” 相对 = “样式表” 类型 = “文本/ CSS ” />
+< script  type = “ text / javascript ”  src = “ {JS_PATH} /hbschool/jquery-1.8.2.min.js ” > </ script >
+< script  type = “ text / javascript ”  src = “ {JS_PATH} /hbschool/solideForK13-min.js ” > </ script >
+< script  type = “ text / javascript ”  src = “ {JS_PATH} /hbschool/ad_pic.js ” > </ script >
+
+</ head >
+
+< body >
+	< div  id = “ mybody ” >
+    	< div  id = “ top ” >
+        	< div  class = “ menu ” >
+            	< ul >
+                	< li >网站首页</ li >
+                    <！ - <li> <a href="list.html">学校概况</a> </ li>
+                    <li> <a href="#">规章制度</a> </ li>
+                    <li> <a href="#">德育网</a> </ li>
+                    <li> <a href="#">教研网</a> </ li>
+                    <li> <a href="#">名师风采</a> </ li>
+                    <li> <a href="#">高考专栏</a> </ li>
+                    <li> <a href="#">图书馆</a> </ li>
+                    <li> <a href="#">校友会</a> </ li>
+                    <li> <a href="#">河中论坛</a> </ li>
+                    <li> <a href="#">查询系统</a> </ li>
+                    <li> <a href="#" class="specil">东校区</a> </ li>    - >  
+                    {PC：内容 
+                    行动=“类别” 
+                    catid =“0”num =“11” 
+                    SITEID = “$ SITEID”
+                    order =“listorder ASC”}  
+                    {loop $ data $ v}
+                    {if $ v ['catid'== 17]}
+                    < 锂 > < 一个 HREF = “ {$ V [ 'URL']} ” 类 = “ specil ” > {$ V [ 'catname']} </ 一 > </ 李 >
+                    {其他}
+                    < 锂 > < 一个 HREF = “ {$ V [ 'URL']} ” > {$ V [ 'catname']} </ 一 > </ 李 >
+                    {/如果}
+                    {/循环}
+                    {/ PC}              
+                </ ul >
+            </ div >
+            < div  id = “ search ” >
+            < input  name = “ search ”  type = “ text ”  class = “ search_text ” /> < input  name = “ searchbut ”  type = “ button ”  class = “ search_but ”  value = “  ” />
+            </ div >
+        </ div >
+ <！ -第一部分内容- >
+        < div  id = “ no1 ” >
+        	< div  id = “ picnews ” >
+            
+           	 < div  class = “ container ”  id = “ idTransformView ” >
+  < ul  class = “ slider ”  id = “ idSlider ” >
+    < 锂 > < IMG  SRC = “ {} IMG_PATH /hbschool/pic.jpg ” 宽度 = “ 280 ” 高度 = “ 210 ” />
+    < p > adfasdfsadf </ p > </ li >
+    < 锂 > < IMG  SRC = “ {} IMG_PATH /hbschool/pic.jpg ” 宽度 = “ 280 ” 高度 = “ 210 ” />
+     < p > adfasdfsadf </ p > </ li >
+    < 锂 > < IMG  SRC = “ {} IMG_PATH /hbschool/pic.jpg ” 宽度 = “ 280 ” 高度 = “ 210 ”  USEMAP = “＃MAP3 ” 边界 = “ 0 ” />
+      < map  name = “ Map3 ”  id = “ Map3 ” >
+        < area  shape = “ rect ”  coords = “ 10,62,115,164 ”  href = “＃” />
+      </ map >
+     < p > adfasdfsadf </ p > </ li >
+  </ ul >
+  < ul  class = “ num ”  id = “ idNum ” >
+    < li > 1 </ li >
+    < li > 2 </ li >
+    < li > 3 </ li >
+  </ ul >
+</ div >
+           	  < div  id = “ news ” >
+                   < H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/news_pic_title.gif ” 宽度 = “ 430 ” 高度 = “ 50 ”  USEMAP = “＃地图2 ” 边界 = “ 0 ” />
+                     < map  name = “ Map2 ”  id = “ Map2 ” >
+                       < area  shape = “ rect ”  coords = “ 386,21,430,44 ”  href = “ {APP_PATH} index.php？m = content ＆ c = index ＆ a = lists ＆ catid = 12 ” />
+                     </ map >
+                   </ h1 >
+                   < ul >
+                   {PC：内容 
+                   行动=“名单”
+                   catid =“12”order =“inputtime DESC”
+                   NUM = “8”}
+                   	{loop $ data $ v}
+                   		< 锂 > < 一个 HREF = “ {$ V [ 'URL']} ” > {$ V [ '标题']} </ 一 > < 跨度 类 = “ newsdate ” > {日期（ 'YM-D'，$ v ['inputtime']）} </ span > </ li >
+                   	{/循环}
+                   {/ PC}
+
+
+                    <！ - <li> <a href="content.html" class="hot">【家长学校1306期】大学主要的专业介绍</a> <span class =“newsdate”> 2013-05-10 </ SPAN> </ LI>
+                   	<li> <a href="#"> [图文]化学老师于文英举办观摩课活动</a> <span class =“newsdate”> 2013-05-10 </ span> </ li>
+                    <li> <a href="#"> [图文]本部数学组织公开课教学</a> <span class =“newsdate”> 2013-05-10 </ span> </ li>
+                    <li> <a href="#"> [图文]生物老师开展观摩课活动</a> <span class =“newsdate”> 2013-05-10 </ span> </ li>
+                    <li> <a href="#"> [图文]首届“五四杯”青年篮球对抗赛成功举办</a> <span class =“newsdate”> 2013-05-10 </ span> </ li >
+                    <li> <a href="#"> [组图]校工会组织教学工广场舞展示，交流活动</a> <span class =“newsdate”> 2013-05-10 </ span> </ li >
+                    <li> <a href="#"> [组图]高二理科部门召开第二次月考表彰大会</a> <span class =“newsdate”> 2013-05-10 </ span> </ li >
+                    <li> <a href="#"> [组图]加强消防培训，确保学生安全</a> <span class =“newsdate”> 2013-05-10 </ span> </ li> - >
+                   </ ul >
+                  
+                 </ div >
+            </ div >
+          < div  id = “ notice ” >
+          	< H1 > < 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/30.gif ” 宽度 = “ 30 ” 高度 = “ 9 ” /> </ 一 > </ H1 >
+            < ul >
+           	  < 锂 > < 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/pot.gif ” 宽度 = “ 4 ” 高度 = “ 4 ” />河北中学男子篮球体育特长生招生简章（2013- 04-11）</ a > </ li >
+                   	< 锂 > < 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/pot.gif ” 宽度 = “ 4 ” 高度 = “ 4 ” />河北中学音乐特长生复试名单（2013-04- 08）</ a > </ li >
+                    < 锂 > < 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/pot.gif ” 宽度 = “ 4 ” 高度 = “ 4 ” />河北中学2013年艺术特长生招生简章（2013- 03-01）</ a > </ li >
+                    < 锂 > < 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/pot.gif ” 宽度 = “ 4 ” 高度 = “ 4 ” /> 2012-2013第二学期考试，放假安排（2013 -02-25）</ a > </ li >
+            </ ul >
+          </ div >
+        </ div >
+ <！ -第二部分内容- >
+
+	  < div  id = “ no2 ” >
+        	< div  class = “ news_content ” >
+            	< H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/news_jy_title.gif ” 宽度 = “ 480 ” 高度 = “ 40 ”  USEMAP = “ #Map ” 边界 = “ 0 ”  ALT = “教研网” />
+                  < map  name = “ Map ”  id = “ Map ” >
+                    < area  shape = “ rect ”  coords = “ 439,11,481,33 ”  href = “＃” />
+                  </ map >
+            	</ h1 >
+         		< IMG  SRC = “ {} IMG_PATH /hbschool/news_jy_pic.gif ” 宽度 = “ 130 ” 高度 = “ 165 ”  ALT = “ TP ” />
+                 < ul >
+                	< 锂 > < 一个 HREF = “＃” > [公开课教学] [图文]化学老师于文英举办观摩课活动</ 一 > </ 李 >
+					< 锂 > < 一个 HREF = “＃” > [公开课教学] [图文]本部数学组组织公开课教学校调研</ 一 > </ 李 >
+					< 锂 > < 一个 HREF = “＃” > [公开课教学] [图文]生物老师开展观摩课活动</ 一 > </ 李 >  
+ 					< 锂 > < 一个 HREF = “＃” > [教学交流] [组图]文科部高一年级召开期中考试分析... </ 一 > </ 李 >  
+					< 锂 > < 一个 HREF = “＃” > [教与学] [图文]【教与学】打破思维定势走出误区... </ 一 > </ 李 >  
+ 					< 锂 > < 一个 HREF = “＃” > [教学交流] [组图]石家庄市教科所专家来我</ 一 > </ 李 >
+                </ ul >
+          </ div >
+            < div  class = “ news_content ”  style = “ margin-left：45px; _margin-left：25px ” >
+            	< H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/news_dy_title.gif ” 宽度 = “ 480 ” 高度 = “ 40 ”  USEMAP = “ #Map ” 边界 = “ 0 ”  ALT = “教研网” />
+                  < map  name = “ Map ”  id = “ Map ” >
+                    < area  shape = “ rect ”  coords = “ 439,11,481,33 ”  href = “＃” />
+                  </ map >
+            	</ h1 >
+         		< IMG  SRC = “ {} IMG_PATH /hbschool/news_dy_pic.gif ” 宽度 = “ 130 ” 高度 = “ 165 ”  ALT = “ TP ” />
+                < ul >
+                	< 锂 > < 一个 HREF = “＃” > [公开课教学] [图文]化学老师于文英举办观摩课活动</ 一 > </ 李 >
+					< 锂 > < 一个 HREF = “＃” > [公开课教学] [图文]本部数学组组织公开课教学校调研</ 一 > </ 李 >
+					< 锂 > < 一个 HREF = “＃” > [公开课教学] [图文]生物老师开展观摩课活动</ 一 > </ 李 >  
+ 					< 锂 > < 一个 HREF = “＃” > [教学交流] [组图]文科部高一年级召开期中考试分析... </ 一 > </ 李 >  
+					< 锂 > < 一个 HREF = “＃” > [教与学] [图文]【教与学】打破思维定势走出误区... </ 一 > </ 李 >  
+ 					< 锂 > < 一个 HREF = “＃” > [教学交流] [组图]石家庄市教科所专家来我</ 一 > </ 李 >
+                </ ul >
+            </ div >
+          </ div >
+ <！ -第三部分内容- >  
+ 			
+ <！ -第四部分内容- >
+      < div  id = “ no4 ” >
+      	< div  id = “ synopsis ” >
+   	     < IMG  SRC = “ {} IMG_PATH /hbschool/gnq.gif ” 宽度 = “ 258 ” 高度 = “ 260 ”  USEMAP = “＃MAP4 ” 风格 = “边距：10px的; ” 边界 = “ 0 ” />
+         < map  name = “ Map4 ”  id = “ Map4 ” >
+           < area  shape = “ rect ”  coords = “ 144,133,250,240 ”  href = “成绩查询” />
+           < area  shape = “ rect ”  coords = “ 12,129,119,239 ”  href = “通讯录” />
+           < area  shape = “ rect ”  coords = “ 9,6,116,113 ”  href = “视频” />
+           < area  shape = “ rect ”  coords = “ 140,9,243,114 ”  href = “班级空间” />
+         </ map >
+        </ div >
+        < div  id = “ slide_1 ” >
+		< div  class = “ slide_content ” >
+			< ul >
+				< li >					
+					< 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/tup.gif ”  ALT = “ ” > </ 一 >
+					< p >校园美景</ p >
+			  </ li >
+				< li >					
+					< 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/tup.gif ”  ALT = “ ” > </ 一 >
+					< p >校园美景</ p >
+				</ li >
+				< li >					
+					< 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/tup.gif ”  ALT = “ ” > </ 一 >
+					< p >校园美景</ p >
+				</ li >
+				< li >					
+					< 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/tup.gif ”  ALT = “ ” > </ 一 >
+					< p >校园美景</ p >
+				</ li >
+				< li >					
+					< 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/tup.gif ”  ALT = “ ” > </ 一 >
+					< p >校园美景</ p >
+				</ li >
+				< li >					
+					< 一个 HREF = “＃” > < IMG  SRC = “ {} IMG_PATH /hbschool/tup.gif ”  ALT = “ ” > </ 一 >
+					< p >校园美景</ p >
+				</ li >			
+			</ ul >
+		</ div >
+		< ul  class = “ index_name ” > </ ul >		
+	    </ div >
+      </ div >
+
+     </ div >    
+< div  id = “ foot ” >	
+  < div  id = “ nr ” >
+    	< div  class = “ foot_link ” >
+        	< H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/foot_link.gif ” 宽度 = “ 150 ” 高度 = “ 36 ”  ALT = “友情链接” /> </ H1 >
+            < ul >
+            	< 锂 > < 一个 HREF = “＃” >邯郸市第一中学的网站</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+            </ ul >
+    	</ div >
+    	< div  class = “ foot_link ” >
+        	< H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/foot_school.gif ” 宽度 = “ 150 ” 高度 = “ 36 ”  ALT = “友情链接” /> </ H1 >
+            < ul >
+            	< 锂 > < 一个 HREF = “＃” >邯郸市第一中学的网站</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” >邯郸市第一中学</ 一 > </ 李 >
+            </ ul >
+           
+   	      </ div >
+          
+          < div  class = “ foot_link ” >
+        	< H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/foot_down.gif ” 宽度 = “ 150 ” 高度 = “ 36 ”  ALT = “资源下载” /> </ H1 >
+            < ul >
+            	< 锂 > < 一个 HREF = “＃” > [资源中心]教师班主任成绩公示系统</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” > [资源中心]高考资源网</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” > [资源中心]中学学科网系统</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” > [资源中心]全品高考网</ 一 > </ 李 >
+                < 锂 > < 一个 HREF = “＃” > [资源中心]志鸿网园校办公系统</ 一 > </ 李 >
+            </ ul >            
+   	      </ div >
+          
+              < div  class = “ foot_link ”  style = “ margin-right：0 ” >
+        	< H1 > < IMG  SRC = “ {} IMG_PATH /hbschool/foot_count.gif ” 宽度 = “ 150 ” 高度 = “ 36 ”  ALT = “网站统计” /> </ H1 >
+            < ul >
+            	< 锂 >总访问量：2600700 </ 李 >
+                < 锂 >人总浏览量：3482048人</ 李 >
+                < li >今日访问：2506人</ li >
+                < li >日均访问：1653人</ li >
+                < li >当前在线：21人</ li >
+            </ ul >            
+   	      </ div >
+  </ div >
+  < div  id = “ copyright ” >版权所有©2008-2013 http：//www.***.com保留所有权利网站备案：冀ICP备00000000号</ div >
+</ div >
+	  < div  id = “ erweima ” >
+
+	  </ div >
+	  < div  id = “ qqweibo ” >
+		< IMG  SRC = “ {} IMG_PATH /hbschool/qq.gif ” /> < BR />
+		/ img  src = “ {IMG_PATH} /hbschool/weibo.gif ” />
+	  </ div >
+	  < script  type = “ text / javascript ” >
+		$（“ #close ”）。点击（function（）{
+			$（这）。parent（）。css（“ display ”，“ none ”）;
+		}）;
+	  < / script >
+</ body >
+
+</ html >
